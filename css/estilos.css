@@ -1,0 +1,17 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: Roboto;
+}
+
+h2 strong, h1{
+    font-family: Coiny;
+}
+
+h2 strong{
+    font-size: 3em;
+}
+p{
+    color:blue;
+}
