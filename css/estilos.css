@@ -5,25 +5,66 @@
 }
 body {
   font-family: Roboto;
-  width: 800px;
+  width: 1200px;
 }
 header {
   border-top: 2px solid #fcee21;
+}
+header h2 {
+  font-size: 64px;
+  line-height: 1em;
+}
+header h3 {
+  font-size: 27px;
+  font-weight: 400;
+}
+header ul {
+  list-style: none;
+}
+#contacto {
+  font-size: 68px;
+  color: white;
+  background-color: #000;
+  line-height: 1.5em;
+  display: inline;
+}
+footer p {
+  font-size: 44px;
+  font-weight: 700;
+}
+footer a {
+  font-size: 28px;
+  color: #000;
 }
 
 .fondoAmarillo {
   background-color: #fcee21;
   display: inline;
 }
-
-h2 strong,
-h1 {
-  font-family: Coiny;
-  font-size: 42px;
+.liamarillo::before {
+  background-color: #fcee21;
+}
+ol {
+  counter-reset: myOrderedListItemsCounter;
+}
+ol li {
+  list-style-type: none;
+}
+ol li:before {
+  counter-increment: myOrderedListItemsCounter;
+  content: counter(myOrderedListItemsCounter) ".";
+  margin-right: 0.5em;
 }
 
+.coiny {
+  font-family: Coiny;
+}
+
+h1 {
+  font-size: 56px;
+}
 h2 strong {
-  font-size: 3em;
+  font-size: 117px;
 }
 
 a {
@@ -34,14 +75,45 @@ a {
 a:link {
   text-decoration: none;
 }
-
 a:visited {
   text-decoration: none;
   color: #666;
 }
-
 a:hover {
   text-decoration: none;
   color: #333;
   transition-duration: 300ms;
+}
+
+#seccion1 p,
+#seccion3 ol {
+  font-size: 32px;
+}
+#seccion2 p {
+  font-size: 21px;
+}
+
+#servicios {
+  font-size: 55px;
+}
+
+#mail {
+  background-color: #fcee21;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding-left: 50px;
+}
+
+#mail p,
+#mail a {
+  padding: 30px;
+}
+#redes {
+  display: flex;
+}
+
+#redes h2 {
+  font-size: 33px;
+  color: #808080;
 }
