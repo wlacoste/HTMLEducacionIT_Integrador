@@ -5,10 +5,10 @@
 }
 body {
   font-family: Roboto;
-  width: fit-content;
   margin-left: 10%;
   margin-right: 10%;
 }
+
 header {
   border-top: 2px solid #fcee21;
 }
@@ -109,12 +109,13 @@ a:hover {
 #seccion3 {
   display: flex;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 #seccion1 div,
 #seccion2 div,
 #seccion3 div {
-  width: 50%;
+  width: 700px;
 }
 
 #seccion1 p,
@@ -170,6 +171,11 @@ a:hover {
 #redes img {
   height: 100px;
 }
+#redes img:hover {
+  height: 110px;
+  transition-duration: 300ms;
+}
+
 hr {
   border: 1px solid #808080;
 }
@@ -184,17 +190,18 @@ header nav {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
-  height: 600px;
-  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 #formulario #formu1 {
-  width: 45%;
+  width: 750px;
+  display: block;
 }
 #formulario section {
   width: 50%;
 }
 #contactanos {
+  width: 750px;
   display: block;
   margin-top: 20px;
 }
