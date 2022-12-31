@@ -22,7 +22,7 @@ header h3 {
 }
 main section h2 {
   font-size: 35px;
-  line-height: 5em;
+  line-height: 1em;
 }
 main section h3 {
   font-size: 27px;
@@ -108,7 +108,7 @@ a:hover {
 #seccion2,
 #seccion3 {
   display: flex;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 #seccion1 div,
@@ -120,13 +120,24 @@ a:hover {
 #seccion1 p,
 #seccion3 ol {
   font-size: 32px;
+  text-align: left;
+  padding-left: 0;
+}
+#seccion3 ol li {
+  line-height: 1.2em;
+  margin-top: 20px;
+}
+#seccion3 {
+  margin-bottom: 50px;
 }
 
 #seccion3 img {
   width: 80%;
+  padding-top: 25px;
 }
 #seccion2 p {
   font-size: 28px;
+  width: 90%;
 }
 
 #servicios {
@@ -147,11 +158,20 @@ a:hover {
 }
 #redes {
   display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 #redes h2 {
   font-size: 33px;
   color: #808080;
+}
+#redes img {
+  height: 100px;
+}
+hr {
+  border: 1px solid #808080;
 }
 
 header nav {
@@ -159,4 +179,62 @@ header nav {
   justify-content: space-between;
   padding-left: 50px;
   padding-right: 40px;
+}
+#formulario {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  height: 600px;
+  align-items: stretch;
+}
+
+#formulario #formu1 {
+  width: 45%;
+}
+#formulario section {
+  width: 50%;
+}
+#contactanos {
+  display: block;
+  margin-top: 20px;
+}
+#contactanos p {
+  display: inline-flex;
+  margin-top: 60px;
+}
+
+#campos input,
+#campos textarea {
+  width: 100%;
+  height: 50px;
+  font-size: 27px;
+}
+#campos textarea {
+  height: 200px;
+}
+
+#campos label {
+  width: 100%;
+  font-size: 27px;
+  font-weight: 700;
+  padding-top: 15px;
+  margin-top: 15px;
+  display: block;
+}
+
+#botones {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#botones .boton {
+  margin: 20px 0px 20px 0px;
+  padding: 2px 25px;
+  height: 50px;
+  font-size: 32px;
+  font-weight: 700;
+
+  background-color: #000;
+  color: white;
 }

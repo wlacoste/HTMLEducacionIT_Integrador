@@ -71,6 +71,7 @@
           </p>
         </div>
       </section>
+      <hr />
 
       <section id="seccion3">
         <div><img src="img/img-servicios.png" alt="servicios wwwapas" /></div>
@@ -97,18 +98,60 @@
       </section>
     </main>
     <footer>
+      <hr />
+
       <div id="formulario">
-        <section>
+        <section id="contactanos">
           <h2 id="contacto">¿Quéres que nos <br />contactemos con vos?</h2>
+          <p class="fondoAmarillo"><br />Envianos tu consulta >></p>
         </section>
-        <section><p class="fondoAmarillo">Envianos tu consulta >></p></section>
+        <div id="formu1">
+          <form action="codigo.php" method="post">
+            <div id="campos">
+              <label for="nombre"
+                >Nombre<input required type="text" name="nombre" id="nombre"
+              /></label>
+              <label for="email"
+                >Email <input required type="email" name="email" id="email"
+              /></label>
+              <label for="mensaje"
+                >Mensaje<textarea
+                  required
+                  name="mensaje"
+                  id="mensaje"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </label>
+            </div>
+            <div id="botones">
+              <div>
+                <button class="boton">Enviar consulta</button>
+              </div>
+              <div>
+                <input class="boton" type="reset" value="Borrar" />
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
+
       <section id="redes">
-        <h2>redes wwwapas</h2>
-        <img src="img/instagram-icon.png" alt="icono instagram" />
+        <h2>
+          redes <br />
+          wwwapas
+        </h2>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="img/instagram-icon.png" alt="icono instagram"
+        /></a>
+
         <img src="img/dribbble-icon.png" alt="icono dribble" />
-        <img src="img/linkedin-icon.png" alt="icono linkedin" />
-        <img src="img/facebook-icon.png" alt="icono facebook" />
+        <a href="https://ar.linkedin.com/" target="_blank"
+          ><img src="img/linkedin-icon.png" alt="icono linkedin"
+        /></a>
+        <a href="https://es-la.facebook.com/" target="_blank"
+          ><img src="img/facebook-icon.png" alt="icono facebook"
+        /></a>
       </section>
 
       <section id="mail">
