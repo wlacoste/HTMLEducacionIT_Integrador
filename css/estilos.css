@@ -5,22 +5,41 @@
 }
 body {
   font-family: Roboto;
-  width: 1200px;
+  width: fit-content;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 header {
   border-top: 2px solid #fcee21;
 }
-header h2 {
+#seccion1 div h2 {
   font-size: 64px;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 header h3 {
+  font-size: 27px;
+  font-weight: 400;
+}
+main section h2 {
+  font-size: 35px;
+  line-height: 5em;
+}
+main section h3 {
   font-size: 27px;
   font-weight: 400;
 }
 header ul {
   list-style: none;
 }
+header ul li a {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+
 #contacto {
   font-size: 68px;
   color: white;
@@ -85,12 +104,29 @@ a:hover {
   transition-duration: 300ms;
 }
 
+#seccion1,
+#seccion2,
+#seccion3 {
+  display: flex;
+  margin-top: 100px;
+}
+
+#seccion1 div,
+#seccion2 div,
+#seccion3 div {
+  width: 50%;
+}
+
 #seccion1 p,
 #seccion3 ol {
   font-size: 32px;
 }
+
+#seccion3 img {
+  width: 80%;
+}
 #seccion2 p {
-  font-size: 21px;
+  font-size: 28px;
 }
 
 #servicios {
@@ -116,4 +152,11 @@ a:hover {
 #redes h2 {
   font-size: 33px;
   color: #808080;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 40px;
 }
